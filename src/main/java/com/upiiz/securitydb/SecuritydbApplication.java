@@ -26,6 +26,7 @@ public class SecuritydbApplication {
     //
     @Bean
     CommandLineRunner init(UserRepository userRepository) {
+
         return args -> {
             // CREAR PERMISOS
             PermissionEntity createPermission = PermissionEntity
